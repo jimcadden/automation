@@ -22,8 +22,8 @@ agent-skills. A release vendors the former into the latter.
 ## Decisions
 
 ### 1. Version
-Single version **v0.1.0**. `agent-skills/.claude-plugin/marketplace.json` currently says
-`"version": "1.0.0"` (line 9) — reconcile to `0.1.0`.
+Single version **v0.1.0**. `agent-skills/.claude-plugin/marketplace.json` version (line 9)
+is reconciled from the pre-release `1.0.0` to `0.1.0`.
 
 ### 2. Repo structure
 Unchanged. No rename of agent-skills (it is multi-tenant: also hosts hypershift,
