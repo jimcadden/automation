@@ -66,9 +66,10 @@ Paths resolve at runtime via `${CLAUDE_PLUGIN_ROOT}`.
 ### 5. Vendor source & manifest
 **Source: `automation/scripts/` — verified newest for every engine file** (git dates
 2026-10). **SKILL.md stays agent-skills-canonical** (newest, carries the
-`### Requirements` blocks). automation's own `skills/` dir is a stale 2-file stub — not
-a vendor source, and **deleted by this work** (see Deliverable 5) to remove a false
-source of truth.
+`### Requirements` blocks). automation's own `skills/` dir is a stale stub (3 files
+across 2 program dirs: `skills/dep-bump/SKILL.md`, `skills/dep-bump/FIXER-SKILL.md`,
+`skills/link-health/SKILL.md`) — not a vendor source, and **deleted by this work** (see
+Deliverable 5) to remove a false source of truth.
 
 The engine is one cohesive flat set (nearly all scripts source `program-lib.sh`, which
 sources `org.sh`/`core.sh`). So the manifest vendors the **entire engine** into the flat
